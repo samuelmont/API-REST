@@ -1,0 +1,8 @@
+const { resolve } = require('path');
+
+module.exports = {
+  config: resolve(__dirname, 'src', 'config', 'database.js'), // Caminho do arquivo de configuração
+  'models-path': resolve(__dirname, 'src', 'models'), // Caminho dos arquivos dos models
+  'migrations-path': resolve(__dirname, 'src', 'database', 'migrations'), // Caminho dos arquivos de migration (alterações no BD)
+  'seeders-path': resolve(__dirname, 'src', 'database', 'seeds'), // Caminho do arquivo de seed (Basicamente um insert multiplo no SQL)
+};
